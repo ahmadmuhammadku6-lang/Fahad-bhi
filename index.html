@@ -1,0 +1,367 @@
+<html>
+<header>
+    <meta name="viewport" content="width =device-width, initial-scale =1">
+    <title> Fahad Trader </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min,js"></script>
+</header>
+<body>
+    <div id="ahmadKu6DigitalWelcome" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace; /* A more digital-looking font */
+    overflow: hidden;
+">
+    <div class="digital-overlay" id="digitalGrid"></div>
+
+    <div style="
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        color: #00ff99; /* Neon Green */
+    ">
+        <h1 id="mainTitle" style="
+            font-size: 8rem;
+            text-transform: uppercase;
+            letter-spacing: 20px;
+            margin: 0;
+            opacity: 0;
+            animation: circuitGlow 3s ease forwards 1s, titleFadeIn 1s forwards 1s;
+            text-shadow: 0 0 10px rgba(0, 255, 153, 0.7), 0 0 20px rgba(0, 255, 153, 0.5);
+        ">AHMAD</h1>
+
+        <p id="subText" style="
+            font-size: 1.5rem;
+            margin-top: 15px;
+            letter-spacing: 5px;
+            opacity: 0;
+            animation: subtextFadeIn 1s forwards 2.5s;
+        ">KU6 Digital Interface</p>
+
+        <div id="loadingContainer" style="
+            width: 400px;
+            height: 30px;
+            margin-top: 30px;
+            border: 2px solid rgba(0, 255, 153, 0.3);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            animation: subtextFadeIn 1s forwards 3s;
+        ">
+            <div id="loadingBar" style="
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent 0%, #00ff99 50%, transparent 100%);
+                opacity: 0.5;
+                animation: loadingScan 3s ease-in-out forwards 3.5s;
+                transform: skewX(-20deg);
+            "></div>
+
+            <div id="loadingText" style="
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #00ff99;
+                font-size: 1.1rem;
+                letter-spacing: 3px;
+            ">INITIALIZING...</div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Import a cool monospace font for the digital look */
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    /* Keyframes for Animations */
+    @keyframes titleFadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes subtextFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    /* Simulates a circuit-style glow */
+    @keyframes circuitGlow {
+        0%, 100% { text-shadow: 0 0 5px rgba(0, 255, 153, 0.7), 0 0 10px rgba(0, 255, 153, 0.4); }
+        50% { text-shadow: 0 0 15px #00ff99, 0 0 30px #00ff99; }
+    }
+
+    /* The main loading scan animation */
+    @keyframes loadingScan {
+        0% { left: -100%; }
+        100% { left: 100%; }
+    }
+
+    /* Optional: A simple pulsing effect on the text */
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.8; }
+    }
+
+    /* Grid Effect Styling (Aesthetic) */
+    .digital-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            linear-gradient(to right, rgba(0, 255, 153, 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 255, 153, 0.05) 1px, transparent 1px);
+        background-size: 50px 50px;
+        opacity: 0.3;
+        animation: pulse 10s infinite;
+    }
+</style>
+
+<script>
+    // Get the welcome screen element
+    const welcomeScreen = document.getElementById('ahmadKu6DigitalWelcome');
+
+    // Auto hide welcome screen after the animation sequence finishes (e.g., 7 seconds)
+    const HIDE_DELAY = 7000; 
+
+    setTimeout(() => {
+        // Start a fade-out effect
+        welcomeScreen.style.transition = 'opacity 1s ease-out';
+        welcomeScreen.style.opacity = '0';
+
+        // Completely hide/remove the element after fade-out
+        setTimeout(() => {
+            welcomeScreen.style.display = 'none';
+        }, 1000);
+    }, HIDE_DELAY);
+
+    // Note: The binary rain effect from your original code is removed 
+    // to match the cleaner, circuit-board aesthetic of the images.
+</script>
+</body>
+<body>
+    <section id="fahad-imag">
+        <img src="IMAG/gift_16833323.png" class="logo">
+        <div class="fahad-text">
+            <h1>Fahad Gift Center</h1>
+            <p>Your Gift is Show Your personality</p>
+        </div>
+        <div class="fahadBtn">
+            <a href="#"><span></span>Find Out</a>
+            <a href="#"><span></span>Read More</a>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#fahad-imag">HOME</a></li>
+                <li><a href="#Features">FEATURES</a></li>
+                <li><a href="#Products">PRODUCTS</a></li>
+                <li><a href="#testimonal">TESTIMOAL</a></li>
+                <li><a href="#footer">CONTECT US </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="manuBtn">
+        <img src="IMAG/menu.png" id="manu">
+    </div>
+    <section id="Features">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="Features-box">
+            <div class="Feature">
+                <h1>Wall Dealing Staff</h1>
+                <div class="Feature-desc">
+                    <div class="Feature-icon">
+                        <img src="IMAG/defance logo.png" alt="">
+                    </div>
+                    <div class="Feature-text">
+                        <p> This section is reserved for dealing staff only. Kindly avoid entry without authorization to
+                            ensure smooth operations and customer service. Thank you for your understanding and
+                            cooperation..</p>
+                    </div>
+                </div>
+                <h1>Shoping Online</h1>
+                <div class="Feature-desc">
+                    <div class="Feature-icon">
+                        <img src="IMAG/online .png" alt="">
+                    </div>
+                    <div class="Feature-text">
+                        <p> We are happy to serve you online! Place your orders easily through our website or app and
+                            enjoy fast, reliable delivery right to your doorstep. Stay connected and shop conveniently
+                            anytime, anywhere.t.</p>
+                    </div>
+                </div>
+                <h1> Low Prices </h1>
+                <div class="Feature-desc">
+                    <div class="Feature-icon">
+                        <img src="IMAG/home (1).png" alt="">
+                    </div>
+                    <div class="Feature-text">
+                        <p> Enjoy the best quality at the lowest prices! We believe in giving you great value for your
+                            money with unbeatable deals and everyday savings.Shop smart , spend less, and get more with
+                            us!. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Feature-img">
+                <img src="IMAG/staff.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- productes -->
+    <section id="Products">
+        <div class="title-text">
+            <p>PRODUCTS</p>
+            <h1>Provide Best Quality</h1>
+        </div>
+        <div class="product-box">
+            <div class="singal-product">
+                <img src="IMAG/1 (1).PNG" alt="">
+                <div class="overlay"></div>
+                <div class="Product-desc">
+                    <h3>Gift Items</h3>
+                    <hr>Our productes is over shine and its look is so atractive for every one.We hope your first
+                    experiance is good with us.
+                </div>
+            </div>
+            <div class="singal-product">
+                <img src="IMAG/1 (1).PNG" alt="">
+                <div class="overlay"></div>
+
+                <div class="Product-desc">
+                    <h3>School Items</h3>
+                    <hr>Our productes is over shine and its look is so atractive for every one.We hope your first
+                    experiance is good with us.
+                </div>
+            </div>
+            <div class="singal-product">
+                <img src="IMAG/1 (1).PNG" alt="">
+                <div class="overlay"></div>
+
+                <div class="Product-desc">
+                    <h3>For House Items</h3>
+                    <hr>Our productes is over shine and its look is so atractive for every one.We hope your first
+                    experiance is good with us.
+                </div>
+            </div>
+            <div class="singal-product">
+                <img src="IMAG/1 (1).PNG" alt="">
+                <div class="overlay"></div>
+
+                <div class="Product-desc">
+                    <h3>Stationary Items</h3>
+                    <hr>Our productes is over shine and its look is so atractive for every one.We hope your first
+                    experiance is good with us.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonal">
+        <div class="title-text">
+            <p>Testimonal</p>
+            <h1>Accoding to your wish</h1>
+        </div>
+        <div class="testimonal-row">
+            <div class="testimonal-columes">
+                <div class="user">
+                    <img src="IMAG/user 1.jpg" alt="">
+                    <div class="usre-info">
+                        <h4>AHMAD KU6 <img src="IMAG/icon.png" alt=""></h4>
+                        <small>@ahmad.com</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam similique laudantium quis
+                    voluptas, sapiente assumenda in inventore placeat consequatur dignissimos deserunt fugiat,</p>
+            </div>
+            <div class="testimonal-columes">
+                <div class="user">
+                    <img src="IMAG/user 2.jpg" alt="">
+                    <div class="usre-info">
+                        <h4>M .MUNIR <img src="IMAG/icon.png" alt=""></h4>
+                        <small>@munir.com</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam similique laudantium quis
+                    voluptas,</p>
+            </div>
+            <div class="testimonal-columes">
+                <div class="user">
+                    <img src="IMAG/user 4.jpg" alt="">
+                    <div class="usre-info">
+                        <h4>MR. ALI<img src="IMAG/icon.png" alt=""></h4>
+                        <small>@ali.com</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam similique laudantium quis
+                    voluptas, sapiente assumenda </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <img class="footer-img" src="IMAG/img.jpg" alt="">
+        <div class="title-text">
+            <p>Contect</p>
+            <h1>Visit shop today</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><img class="w" src="IMAG/defance logo.png" alt=""> Monday to Friday - 9am to 9pm</p>
+                <p> <img class="w" src="IMAG/defance logo.png" alt=""> Saturday and sunday - 8am to 11pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>Allama-iqbal School (girls) road kasur , punjab , pakistan <img class="w" src="IMAG/home.png" alt="">
+                </p>
+                <p>Email: ahmadmuhammadku6@gmail.com<img class="w" src="IMAG/envelope-open.png" alt=""></p>
+                <p>Ph: +92306-1424-359 , +923054838736<img class="w" src="IMAG/phone-call.png" alt=""></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <img class="w" src="IMAG/facebook-square.png" alt="">
+            <img class="w" src="IMAG/instagram-circle.png" alt="">
+            <img class="w" src="IMAG/whatsapp.png" alt="">
+            <img class="w" src="IMAG/youtube-square.png" alt="">
+            <p>(@)Copyright Easy Tutorials youtube channel</p>
+        </div>
+    </section>
+
+    <script>
+        var manuBtn = document.getElementById("manuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var manu = document.getElementById("manu")
+        sideNav.style.right = "-230px";
+        manuBtn.onclick = function () {
+            if (sideNav.style.right == "-230px") {
+                sideNav.style.right = "0";
+                manu.src = "IMAG/close.png";
+            }
+            else {
+                sideNav.style.right = "-230px";
+                manu.src = "IMAG/menu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
